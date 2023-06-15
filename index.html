@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator ramek</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>Wycena</h1>
+    <form class="form" action="">
+      <div class="profile-container">
+        <label for="profile">Profil</label>
+        <select id="profile" name="profile">
+          <option value="Z1 Alu">Z1 Alu</option>
+          <option value="Z1 Cz Mat">Z1 Cz Mat</option>
+          <option value="Z1 Cz Poł">Z1 Cz Poł</option>
+          <option value="Z1 Bi Poł/Mat">Z1 Bi Poł/Mat</option>
+          <option value="Z1 Inox">Z1 Inox</option>
+          <option value="Z1 Zł Poł">Z1 Zł Poł</option>
+          <option value="Z3 Alu">Z3 Alu</option>
+          <option value="Z4 Alu">Z4 Alu</option>
+          <option value="Z4 Cz Poł">Z4 Cz Poł</option>
+          <option value="Z4 Cz Mat">Z4 Cz Mat</option>
+          <option value="Z4 Inox">Z4 Inox</option>
+          <option value="Z4 Zł Poł">Z4 Zł Poł</option>
+          <option value="Z5 Alu">Z5 Alu</option>
+          <option value="Z8 Alu">Z8 Alu</option>
+          <option value="Z9 Alu">Z9 Alu</option>
+          <option value="Z9 Cz Mat">Z9 Cz Mat</option>
+          <option value="Z9 Inox">Z9 Inox</option>
+          <option value="Z10 Alu">Z10 Alu</option>
+          <option value="Z10 Mat">Z10 Cz Mat</option>
+          <option value="Z11 Alu">Z11 Alu</option>
+          <option value="Z11 Cz Poł">Z11 Cz Poł</option>
+          <option value="Z11 Cz Mat">Z11 Cz Mat</option>
+          <option value="Z11 Bi Poł/Mat">Z11 Bi Poł/Mat</option>
+          <option value="Z11 Inox">Z11 Inox</option>
+          <option value="Z12 Alu">Z12 Alu</option>
+          <option value="Z12 Cz Szczot">Z12 Cz Szczot</option>
+          <option value="Z18 Alu">Z18 Alu</option>
+          <option value="Z18 Biały">Z18 Biały</option>
+          <option value="Z18 Inox">Z18 Inox</option>
+          <option value="Z19 Alu">Z19 Alu</option>
+        </select>
+        <p class="price-info">
+          Cena za m²: <span class="price-info__profile"></span>
+        </p>
+
+        <div class="profile-dimensions">
+          <div class="profile-dimensions__dimensionA">
+            <label>Bok A</label>
+            <input type="number" placeholder="wymiar boku A" />
+          </div>
+          <div class="profile-dimensions__dimensionB">
+            <label>Bok B</label>
+            <input type="number" placeholder="wymiar boku B" />
+          </div>
+        </div>
+
+        <div class="additional-holes">
+          <label>Dodatkowe otwory</label>
+          <input type="number" placeholder="ile dodatkowych otworów" />
+        </div>
+        <div class="amount">
+          <label>Ilość</label>
+          <input type="number" placeholder="podaj liczbę ramek" />
+        </div>
+      </div>
+
+      <div class="percent">
+        <button value="0.05">5%</button>
+        <button value=".10">10%</button>
+        <button value=".15">15%</button>
+        <button value=".20">20%</button>
+      </div>
+
+      <div class="checkbox">
+        <label>Szyba</label>
+        <input class="checkbox__glass" type="checkbox" />
+      </div>
+
+      <div class="glass-container" hidden="false">
+        <label for="glass">Szkło</label>
+        <select id="glass" name="glass">
+          <option value="Lacomat">Lacomat</option>
+          <option value="Satinato">Satinato</option>
+          <option value="Lacobel Biały 9003">Lacobel Biały 9003</option>
+          <option value="Lacobel Biały 9010">Lacobel Biały 9010</option>
+          <option value="Lustro Srebrne">Lustro Srebrne</option>
+          <option value="Lacobel Czarny">Lacobel Czarny</option>
+          <option value="Bezbarwna">Bezbarwna</option>
+          <option value="Antisol Czarny">Antisol Czarny</option>
+          <option value="Antisol Grafit">Antisol Grafit</option>
+          <option value="Antisol Brąz">Antisol Brąz</option>
+        </select>
+        <p class="price-info">
+          Cena za m²: <span class="price-info__glass"></span>
+        </p>
+      </div>
+
+      <div class="price-container">
+        <button class="price-container__btn">Oblicz</button>
+        <h2 class="price-container__result"></h2>
+        <h2 class="price-container__sub-percent"></h2>
+      </div>
+    </form>
+
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
